@@ -1,0 +1,12 @@
+interface ftm_if2;
+ bit CH0;	
+ bit CH1;	
+ bit CH2;	
+ bit CH3;	
+ bit CH4;	
+ bit CH5;	
+ bit CH6;	
+ bit CH7;	
+ bit PHA;
+ bit PHB; 
+endinterface: ftm_if2

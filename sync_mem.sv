@@ -1,0 +1,41 @@
+class sync_mem;
+
+ ftm_sc 	FTM_SC;
+ ftm_cnt 	FTM_CNT;
+ ftm_mod 	FTM_MOD;
+ ftm_c0sc 	FTM_C0SC;
+ ftm_c1sc 	FTM_C1SC;
+ ftm_c2sc 	FTM_C2SC;
+ ftm_c3sc 	FTM_C3SC;
+ ftm_c4sc 	FTM_C4SC;
+ ftm_c5sc 	FTM_C5SC;
+ ftm_c6sc 	FTM_C6SC;
+ ftm_c7sc 	FTM_C7SC;
+ ftm_c0v 	FTM_C0V;
+ ftm_c1v 	FTM_C1V;
+ ftm_c2v 	FTM_C2V;
+ ftm_c3v 	FTM_C3V;
+ ftm_c4v 	FTM_C4V;
+ ftm_c5v 	FTM_C5V;
+ ftm_c6v 	FTM_C6V;
+ ftm_c7v 	FTM_C7V;
+ ftm_cntin  	FTM_CNTIN;
+ ftm_status 	FTM_STATUS;
+ ftm_mode 	FTM_MODE;
+ ftm_sync 	FTM_SYNC;
+ ftm_outinit 	FTM_OUTINIT;
+ ftm_outmask 	FTM_OUTMASK;
+ ftm_combine 	FTM_COMBINE;
+ ftm_deadtime 	FTM_DEADTIME;
+ ftm_exttrig 	FTM_EXTTRIG;
+ ftm_pol 	FTM_POL;
+ ftm_fms 	FTM_FMS;
+ ftm_filter 	FTM_FILTER;
+ ftm_qdctrl 	FTM_QDCTRL;
+ ftm_conf 	FTM_CONF;
+ ftm_synconf 	FTM_SYNCONF;
+ ftm_invctrl 	FTM_INVCTRL;
+ ftm_swoctrl 	FTM_SWOCTRL;
+ ftm_pwmload 	FTM_PWMLOAD;
+
+endclass: sync_mem

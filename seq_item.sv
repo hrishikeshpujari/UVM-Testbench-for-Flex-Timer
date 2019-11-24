@@ -1,0 +1,83 @@
+class seq_item extends uvm_sequence_item;
+
+ `uvm_object_utils(seq_item)
+ bit CH0;	
+ bit CH1;	
+ bit CH2;	
+ bit CH3;	
+ bit CH4;	
+ bit CH5;	
+ bit CH6;	
+ bit CH7;	
+ bit wr_en;
+ bit rd_en; 
+ bit [0:31] data;
+ bit [0:32] clk_period_CH0;
+ bit [0:32] clk_period_CH1;
+ bit [0:32] clk_period_CH2;
+ bit [0:32] clk_period_CH3;
+ bit [0:32] clk_period_CH4;
+ bit [0:32] clk_period_CH5;
+ bit [0:32] clk_period_CH6;
+ bit [0:32] clk_period_CH7;
+ bit [0:32] on_time_CH0;
+ bit [0:32] on_time_CH1;
+ bit [0:32] on_time_CH2;
+ bit [0:32] on_time_CH3;
+ bit [0:32] on_time_CH4;
+ bit [0:32] on_time_CH5;
+ bit [0:32] on_time_CH6;
+ bit [0:32] on_time_CH7;
+ rand ftm_sc 		FTM_SC;
+ rand ftm_cnt 		FTM_CNT;
+ rand ftm_mod 		FTM_MOD;
+ rand ftm_c0sc 		FTM_C0SC;
+ rand ftm_c1sc 		FTM_C1SC;
+ rand ftm_c2sc 		FTM_C2SC;
+ rand ftm_c3sc 		FTM_C3SC;
+ rand ftm_c4sc 		FTM_C4SC;
+ rand ftm_c5sc 		FTM_C5SC;
+ rand ftm_c6sc 		FTM_C6SC;
+ rand ftm_c7sc 		FTM_C7SC;
+ rand ftm_c0v 		FTM_C0V;
+ rand ftm_c1v 		FTM_C1V;
+ rand ftm_c2v 		FTM_C2V;
+ rand ftm_c3v 		FTM_C3V;
+ rand ftm_c4v 		FTM_C4V;
+ rand ftm_c5v 		FTM_C5V;
+ rand ftm_c6v 		FTM_C6V;
+ rand ftm_c7v 		FTM_C7V;
+ rand ftm_cntin  	FTM_CNTIN;
+ rand ftm_status 	FTM_STATUS;
+ rand ftm_mode 		FTM_MODE;
+ rand ftm_sync 		FTM_SYNC;
+ rand ftm_outinit 	FTM_OUTINIT;
+ rand ftm_outmask 	FTM_OUTMASK;
+ rand ftm_combine 	FTM_COMBINE;
+ rand ftm_deadtime 	FTM_DEADTIME;
+ rand ftm_exttrig 	FTM_EXTTRIG;
+ rand ftm_pol 	        FTM_POL;
+ rand ftm_fms 	        FTM_FMS;
+ rand ftm_filter        FTM_FILTER;
+ rand ftm_qdctrl        FTM_QDCTRL;
+ rand ftm_conf 	        FTM_CONF;
+ rand ftm_synconf 	FTM_SYNCONF;
+ rand ftm_invctrl 	FTM_INVCTRL;
+ rand ftm_swoctrl 	FTM_SWOCTRL;
+ rand ftm_pwmload 	FTM_PWMLOAD;
+ reg_name_enum     reg_name;
+
+//constraint zero {FTM_SC.reserved == 'b0 ;FTM_CNT.reserved == 'b0 ;FTM_MOD.reserved == 'b0;FTM_CSC.reserved == 'b0;
+//		FTM_CNV.reserved == 'b0 ;FTM_CNTIN.reserved == 'b0 ;FTM_STATUS.reserved == 'b0;FTM_MODE.reserved == 'b0;
+//		FTM_SYNC.reserved == 'b0 ;FTM_OUTINIT.reserved == 'b0 ;FTM_OUTMASK.reserved == 'b0;FTM_COMBINE.reserved == 'b0;
+//		FTM_COMBINE.reserved1 == 'b0 ;FTM_COMBINE.reserved2 == 'b0 ;FTM_COMBINE.reserved3 == 'b0;FTM_COMBINE.reserved4 == 'b0;
+//		FTM_COMBINE.reserved5 == 'b0 ;FTM_COMBINE.reserved6 == 'b0 ;FTM_COMBINE.reserved7 == 'b0 ;FTM_DEADTIME.reserved == 'b0;
+//		FTM_EXTTRIG.reserved == 'b0 ;FTM_POL.reserved == 'b0 ;FTM_FMS.reserved == 'b0 ;FTM_FILTER.reserved == 'b0;
+//		FTM_QDCTRL.reserved == 'b0 ;FTM_CONF.reserved == 'b0 ;FTM_SYNCONF.reserved == 'b0 ;FTM_INVCTRL.reserved == 'b0;
+//		FTM_SWOCTRL.reserved == 'b0 ;FTM_PWMLOAD.reserved == 'b0 ;FTM_PWMLOAD.reserved1 == 'b0;};
+
+function new(string name = "seq_item");
+   super.new(name);
+ endfunction
+
+endclass: seq_item
